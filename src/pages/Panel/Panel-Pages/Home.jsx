@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div className=' w-full h-screen bg-gray-100 pl-60 pt-10 pr-10 pb-10'>
       <div className=' mb-16 mt-5'>
-        <h1 className='text-5xl font-bold text-gray-900'>Hello Johan!</h1>
+        <h1 className='text-5xl font-bold text-gray-900'>Hola Johan!</h1>
         <p className=' text-lg text-gray-600'>Samy's Sweet Creations</p>
       </div>
 
