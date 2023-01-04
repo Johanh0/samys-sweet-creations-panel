@@ -6,6 +6,7 @@ import Login from './pages/Login/Login'
 import Home from './pages/Panel/Panel-Pages/Home'
 import Clients from './pages/Panel/Panel-Pages/Clients'
 import Orders from './pages/Panel/Panel-Pages/Orders'
+import Calendar from './pages/Panel/Panel-Pages/Calendar'
 import Notes from './pages/Panel/Panel-Pages/Notes'
 
 import Sidebar from './components/Sidebar'
@@ -21,7 +22,7 @@ function App() {
         <Route path='/home' element={<Home/>}/>
         <Route path='/clients' element={<Clients/>}/>
         <Route path='/orders' element={<Orders/>}/>
-        <Route path='/calendar' element={<Notes/>}/>
+        <Route path='/calendar' element={<Calendar/>}/>
         <Route path='/notes' element={<Notes/>}/>
       </Route>
 

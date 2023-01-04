@@ -1,11 +1,17 @@
 import React from 'react'
+import userImg from '../../../assets/img/user.png'
 
 const Home = () => {
   return (
     <div className=' w-full h-screen bg-gray-100 pl-60 pt-10 pr-10 pb-10'>
-      <div className=' mb-16 mt-5'>
-        <h1 className='text-5xl font-bold text-gray-900'>Hola Johan!</h1>
-        <p className=' text-lg text-gray-600'>Samy's Sweet Creations</p>
+      <div className='flex justify-between items-center mb-16 mt-5'>
+        <div>
+          <h1 className='text-5xl font-bold text-gray-900'>Hola Johan!</h1>
+          <p className=' text-lg text-gray-600'>Samy's Sweet Creations</p>
+        </div>
+        <div>
+          <img src={userImg} alt="Perfil" className=' w-12 rounded-full cursor-pointer'/>
+        </div>
       </div>
 
       <div className='flex justify-between gap-10 w-full '>
