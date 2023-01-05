@@ -16,14 +16,17 @@ function App() {
 
   return (
     <Routes>
-      <Route path='/login' element={<Login/>}/>
-      <Route  element={<Sidebar/>}>
-        {/* <Route index element={<Panel/>}/> */}
-        <Route path='/home' element={<Home/>}/>
-        <Route path='/clients' element={<Clients/>}/>
-        <Route path='/orders' element={<Orders/>}/>
-        <Route path='/calendar' element={<Calendar/>}/>
-        <Route path='/notes' element={<Notes/>}/>
+
+      <Route path='/admin'>
+        <Route path='/admin/login' element={<Login/>}/>
+
+        <Route  element={<Sidebar/>}>
+          <Route path='/admin/home' element={<Home/>}/>
+          <Route path='/admin/clients' element={<Clients/>}/>
+          <Route path='/admin/orders' element={<Orders/>}/>
+          <Route path='/admin/calendar' element={<Calendar/>}/>
+          <Route path='/admin/notes' element={<Notes/>}/>
+        </Route>
       </Route>
 
 
