@@ -54,7 +54,7 @@ const Sidebar = () => {
                 <li 
                     className='hover:bg-pink-100 p-3 rounded-xl cursor-pointer w-full '
                 >
-                    <Link to="/login" className='flex  justify-start items-center '><FaDoorOpen/> <span className=' text-base ml-5'>Salir</span></Link>
+                    <Link to="/admin/login" className='flex  justify-start items-center '><FaDoorOpen/> <span className=' text-base ml-5'>Salir</span></Link>
                 </li>
             </ul>
         </div>
