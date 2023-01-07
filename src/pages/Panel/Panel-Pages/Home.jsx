@@ -1,4 +1,7 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
+
+import Tippy from '@tippyjs/react'
+import 'tippy.js/dist/tippy.css'
 import userImg from '../../../assets/img/user.png'
 
 const Home = () => {
@@ -10,7 +13,15 @@ const Home = () => {
           <p className=' text-lg text-gray-600'>Samy's Sweet Creations</p>
         </div>
         <div>
-          <img src={userImg} alt="Perfil" className=' w-10 rounded-full cursor-pointer'/>
+          <Tippy
+            interactive={true}
+            placement='bottom'
+            content={
+              <Link to='/admin/profile'>Perfil</Link>
+            }
+          >
+            <img src={userImg} alt="Perfil" className=' w-10 rounded-full cursor-pointer'/>
+          </Tippy>
         </div>
       </div>
 

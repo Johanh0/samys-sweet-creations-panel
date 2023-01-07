@@ -9,7 +9,7 @@ const Sidebar = () => {
 
   return (
     <>
-        <div className=' fixed flex flex-col justify-between w-48 h-screen p-5 shadow-sm text-gray-900 bg-white'>
+        <div className=' fixed flex flex-col justify-between w-44 h-screen p-5 shadow-sm text-gray-900 bg-white'>
         <div className=' text-center'>
             <img src={logo} alt="Logo" />
 
@@ -50,6 +50,7 @@ const Sidebar = () => {
         </div>
 
         <div>
+            <hr className='mt-5 mb-5 bg-gray-300' />
             <ul className='flex flex-col items-center text-xl gap-5'>
                 <li 
                     className='hover:bg-pink-100 p-3 rounded-xl cursor-pointer w-full '
